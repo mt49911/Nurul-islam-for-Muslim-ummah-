@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <title>NURUL ISLAM | نور الإسلام</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="logo-area">
+            <img src="logo.jpg" alt="NURUL ISLAM" class="logo" onerror="this.src='https://via.placeholder.com/50x50?text=NI'">
+            <span class="site-name">NURUL ISLAM</span>
+        </div>
+        <div class="top-bar-right">
+            <div class="language-selector">
+                <select id="langSelect">
+                    <option value="en">English</option>
+                    <option value="ar">العربية</option>
+                </select>
+            </div>
+            <div class="notification-bell" id="notificationBell">
+                <i class="fas fa-bell"></i>
+                <span class="badge" id="notificationBadge">0</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Menu Button -->
+    <div class="menu-btn" id="menuBtn">
+        <i class="fas fa-bars"></i>
+    </div>
+
+    <!-- Side Menu -->
+    <div class="side-menu" id="sideMenu">
+        <a href="#" data-page="home"><i class="fas fa-home"></i> <span>Home</span></a>
+        <a href="#" data-page="tafseer"><i class="fas fa-book-open"></i> <span>Tafseer</span></a>
+        <a href="#" data-page="hadith"><i class="fas fa-hadith"></i> <span>Hadith Reminder</span></a>
+        <a href="#" data-page="quran"><i class="fas fa-quran"></i> <span>Quran Reminder</span></a>
+        <a href="#" data-page="motivation"><i class="fas fa-heart"></i> <span>Daily Motivation</span></a>
+        <a href="#" data-page="calendar"><i class="fas fa-calendar-alt"></i> <span>Islamic Calendar</span></a>
+        <a href="#" data-page="ramadan"><i class="fas fa-moon"></i> <span>Ramadan Countdown</span></a>
+        <a href="#" data-page="about"><i class="fas fa-user"></i> <span>About</span></a>
+        <a href="#" data-page="contact"><i class="fas fa-phone-alt"></i> <span>Contact</span></a>
+        <a href="admin.html"><i class="fas fa-cog"></i> <span>Admin Dashboard</span></a>
+    </div>
+
+    <!-- Main Content -->
+    <main class="content" id="content">
+        <!-- Content injected by JavaScript -->
+    </main>
+
+    <!-- AI Assistant -->
+    <div class="ai-assistant" id="aiBtn">
+        <i class="fas fa-robot"></i>
+    </div>
+
+    <!-- AI Modal -->
+    <div id="aiModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3><i class="fas fa-robot"></i> Islamic AI Assistant</h3>
+            <div id="chatMessages" class="chat-messages"></div>
+            <div class="chat-input-area">
+                <input type="text" id="chatInput" placeholder="Ask about Islam...">
+                <button id="sendChat"><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <img src="logo.jpg" alt="Logo" class="footer-logo" onerror="this.src='https://via.placeholder.com/100x100?text=NI'">
+        <p>Created and hosted by Abdullahi Muhammad Tuku</p>
+        <p>&copy; 2025 NURUL ISLAM. All rights reserved.</p>
+        <div class="social-links">
+            <a href="https://wa.me/2349020899102" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            <a href="mailto:emteeydigitalservice11@gmail.com"><i class="fas fa-envelope"></i></a>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+                  </html>
