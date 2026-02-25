@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - NURUL ISLAM</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * { margin:0; padding:0; box-sizing:border-box; }
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(145deg, #0b2b22, #1b4d3e);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        .admin-container {
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(20px);
+            width: 100%;
+            max-width: 650px;
+            padding: 50px;
+            border-radius: 50px;
+            box-shadow: 0 30px 60px rgba(0,0,0,0.4);
+            border: 2px solid rgba(255,255,255,0.2);
+        }
+        h1 {
+            color: #c9a227;
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 3rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+        }
+        input, textarea, select {
+            width: 100%;
+            padding: 18px;
+            margin-bottom: 25px;
+            border: none;
+            border-radius: 40px;
+            background: rgba(255,255,255,0.15);
+            color: white;
+            font-size: 1.1rem;
+            outline: 2px solid transparent;
+        }
+        input::placeholder, textarea::placeholder {
+            color: rgba(255,255,255,0.6);
+        }
+        input:focus, textarea:focus, select:focus {
+            outline-color: #c9a227;
+        }
+        select option {
+            background: #1b4d3e;
+        }
+        button {
+            width: 100%;
+            padding: 20px;
+            background: #c9a227;
+            color: #1b4d3e;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.3rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: 0.2s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+        }
+        button:hover {
+            background: #b88c1f;
+            transform: scale(1.02);
+        }
+        #message {
+            margin-top: 25px;
+            text-align: center;
+            font-weight: 600;
+            font-size: 1.2rem;
+        }
+        .back-link {
+            display: block;
+            text-align: center;
+            margin-top: 30px;
+            color: white;
+            text-decoration: none;
+            font-size: 1.1rem;
+        }
+        .back-link:hover {
+            color: #c9a227;
+        }
+    </style>
+</head>
+<body>
+    <div class="admin-container">
+        <h1><i class="fas fa-cog"></i> Admin</h1>
+        <form id="postForm">
+            <input type="text" id="postTitle" placeholder="Post Title" required>
+            <textarea id="postContent" placeholder="Post Content" rows="6" required></textarea>
+            
+            <select id="postCategory" required>
+                <option value="">Select Category</option>
+                <option value="Tafseer">📖 Tafseer</option>
+                <option value="Hadith">📜 Hadith</option>
+                <option value="Quran">📖 Quran</option>
+                <option value="Motivation">💬 Motivation</option>
+                <option value="General">🌙 General</option>
+            </select>
+            
+            <select id="postType">
+                <option value="text">Text Only</option>
+                <option value="photo">Photo</option>
+                <option value="video">Video</option>
+                <option value="audio">Audio</option>
+            </select>
+            
+            <input type="url" id="postUrl" placeholder="Media URL (for photo/video/audio)">
+            
+            <button type="submit"><i class="fas fa-paper-plane"></i> Publish Post</button>
+        </form>
+        <div id="message"></div>
+        <a href="index.html" class="back-link"><i class="fas fa-arrow-left"></i> Back to Website</a>
+    </div>
+
+    <script src="admin.js"></script>
+</body>
+</html>
